@@ -1,0 +1,45 @@
+CALLS: 137735 entries -> 137691
+       columns: 4 (id  object, user_id  int64, call_date object, duration float64)
+       * id podria ser int
+       * call_date deberia ser datetime
+       * max duration: 37.6
+
+INTERNET: 104825 entries -> 14807
+         columns: 4 (id  object, user_id  int64, session_date object, mb_used float64)
+         * id podria ser int
+         * call_date deberia ser datetime
+         * max mb_used: 1693.47
+
+
+MESSAGES: 76051 entries -> clean: 68999
+         columns: 3 (id  object, user_id  int64, message_date object)
+         * id podria ser int
+         * call_date deberia ser datetime
+         * max mb_used: 1693.47
+
+PLANS: 2 entries
+        columns: 8
+        messages_included      2 non-null      int64
+        mb_per_month_included  2 non-null      int64
+        minutes_included       2 non-null      int64
+        usd_monthly_pay        2 non-null      int64
+        usd_per_gb             2 non-null      int64
+        usd_per_message        2 non-null      float64
+        usd_per_minute         2 non-null      float64
+        plan_name              2 non-null      object
+
+
+USERS: 500 entries
+       columns:
+       user_id     500 non-null    int64
+      first_name  500 non-null    object
+      last_name   500 non-null    object
+      age         500 non-null    int64
+      city        500 non-null    object
+      reg_date    500 non-null    object
+      plan        500 non-null    object
+      churn_date  34 non-null     object
+
+
+
+       *max age 75
